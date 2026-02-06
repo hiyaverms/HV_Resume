@@ -30,7 +30,7 @@ body {
     flex-direction: column;
 }
 
-/* --- HEADER --- */
+
 header {
     background-color: #759FBC; /* Steel Blue */
     color: #FBFBF2;
@@ -160,7 +160,7 @@ footer a {
 }
 
 #calculator-wrapper {
-    background-color: #DDD5E7; /* Light Purple from your palette */
+    background-color: #DDD5E7; /* Light Purple */
     padding: calc(10px + 2vw);
     border-radius: 10px;
     max-width: 500px;
