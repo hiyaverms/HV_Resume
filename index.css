@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.wrapper {
+    max-width: 1200px; 
+    margin: 0 auto; 
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* --- HEADER --- */
+header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: calc(24px + 1vw); 
+}
+
+header p {
+    font-size: calc(14px + 0.5vw);
+    color: #ecf0f1;
+}
+
+
+.content-container {
+    display: flex;
+    flex-wrap: wrap; 
+    flex: 1; 
+
+
+nav {
+    background-color: #34495e;
+    padding: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav li {
+    margin-bottom: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ecf0f1;
+    font-weight: bold;
+    font-size: calc(14px + 0.2vw);
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #3498db;
+}
+
+main {
+    padding: 40px;
+    background-color: #ffffff;
+}
+
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: auto;
+}
+
+footer a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+
+@media screen and (min-width: 751px) {
+    header {
+        text-align: left; 
+    }
+
+    nav {
+        width: 30%; 
+        display: flex;
+        flex-direction: column; 
+    }
+}
+
+@media screen and (max-width: 750px) {
+    header {
+        text-align: center;
+    }
+
+    nav {
+        width: 100%;
+        border-bottom: 1px solid #bdc3c7;
+    }
+
+    nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; 
+        gap: 15px;
+    }
+    
+    nav li {
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (min-width: 1001px) {
+    main {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    main {
+        width: 100%; 
+    }
+       
+    .content-container {
+        justify-content: space-between; 
+        /* not sure if we went over justify-content, 
+        but it is something I learned in a previous 
+        HTML class and I thought it might be useful
+        here. I used w3schools to refresh my memory 
+        on how it works */
+    }
+}}
