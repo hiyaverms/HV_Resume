@@ -47,6 +47,10 @@ header p {
     opacity: 0.9; 
 }
 
+hr {
+    margin: 40px 0; 
+    border: 1px solid #DDD5E7;
+}
 
 .content-container {
     display: flex;
@@ -136,6 +140,67 @@ footer a {
     color: #759FBC;
 }
 
+#calculator-wrapper {
+    background-color: #DDD5E7; /* Light Purple from your palette */
+    padding: calc(10px + 2vw);
+    border-radius: 10px;
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.calc-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.calc-inputs input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #1B065E;
+    font-size: calc(14px + 0.5vw);
+}
+
+.calc-buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 buttons per row */
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.calc-buttons button {
+    padding: 15px;
+    background-color: #1B065E;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: calc(16px + 0.5vw);
+}
+
+.calc-buttons button:hover {
+    background-color: #759FBC;
+}
+
+#clear-btn {
+    background-color: #2A2D34;
+}
+
+#output-container {
+    font-size: calc(18px + 1vw);
+    font-weight: bold;
+    padding: 15px;
+    background-color: #FBFBF2;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 500px) {
+    .calc-buttons {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
 
 @media screen and (min-width: 751px) {
     header {

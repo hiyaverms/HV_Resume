@@ -58,11 +58,26 @@
                     </div>
 
                     <br><br><br>
-                    <hr>
-                    <h3>JavaScript Calculator</h3>
-                    <p><em>The interactive calculator project will be loaded below:</em></p>
-                    <div id="calculator-container" style="min-height: 400px; padding: 20px;">
+                    <div id="calculator-wrapper">
+                        <h3>JavaScript Calculator</h3>
+                        <div class="calc-inputs">
+                            <input type="number" id="first-number" placeholder="First Number">
+                            <input type="number" id="second-number" placeholder="Second Number">
                         </div>
+
+                        <div class="calc-buttons">
+                            <button onclick="doAddition()">+</button>
+                            <button onclick="doSubtraction()">-</button>
+                            <button onclick="doMultiplication()">*</button>
+                            <button onclick="doDivision()">/</button>
+                            <button onclick="doPower()">**</button>
+                            <button id="clear-btn" onclick="doClear()">Clear</button>
+                        </div>
+
+                        <div id="output-container">
+                            Result: <span id="output">0</span>
+                        </div>
+                    </div>
 
                 </main>
 
