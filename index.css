@@ -62,19 +62,28 @@ hr {
 
 nav {
     background-color: #1B065E; /* Deep Purple */
-    padding: 30px 15px;
+    padding: 15px;
 }
 
 nav ul {
     list-style: none;
-    padding-left: 0;
+    display: flex;
 }
 
 nav li {
     margin-bottom: 15px;
 }
 
-nav a, main a, footer a {
+nav a {
+    color: #FBFBF2;
+    display: block;
+    padding: 10px 15px;
+    border-radius: 4px;
+    white-space: nowrap; 
+    font-size: calc(14px + 0.3vw);
+}
+
+main a, footer a {
     text-decoration: none;
     color: inherit; 
     /* not sure if you went over this but inherit 
@@ -217,23 +226,38 @@ footer a {
 
 @media screen and (min-width: 751px) {
     header { text-align: left; }
-    nav { width: 30%; }
+    .content-container { 
+        flex-direction: row; 
+    }
+
+    nav { 
+        width: 30%; 
+        min-height: 100%; 
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
 }
 
 @media screen and (max-width: 750px) {
     header { text-align: center; }
-    nav { width: 100%; }
-    .content-container { flex-direction: column; }
+    .content-container { 
+        flex-direction: column; 
+    }
+
+    nav {
+        width: 100%;
+        overflow-x: auto; 
+    }
+
     nav ul {
-        display: flex;
-        flex-wrap: wrap;
+        flex-direction: row; 
         justify-content: center; 
-        gap: 10px;
+        flex-wrap: nowrap;
+        gap: 5px;
     }
-    #this-one {
-        flex-direction: column;
-        text-align: center;
-    }
+
 }
 
 @media screen and (min-width: 1001px) {
