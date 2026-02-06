@@ -96,6 +96,12 @@ main {
     padding: 40px;
 }
 
+main ul {
+    padding-left: 25px; 
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
 main h3 {
     margin-bottom: 20px;
     color: #1B065E;
