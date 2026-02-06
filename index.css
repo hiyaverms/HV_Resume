@@ -67,6 +67,7 @@ nav {
 
 nav ul {
     list-style: none;
+    padding-left: 0;
 }
 
 nav li {
@@ -175,6 +176,9 @@ footer a {
 .calc-buttons {
     display: grid;
     grid-template-columns: repeat(3, 1fr); 
+    /*
+    this ensures that each row has three buttons
+    */
     gap: 10px;
     margin-bottom: 20px;
 }
@@ -219,7 +223,7 @@ footer a {
 @media screen and (max-width: 750px) {
     header { text-align: center; }
     nav { width: 100%; }
-    .content-container { flex-direction: column; } /* Forces nav over main on mobile */
+    .content-container { flex-direction: column; }
     nav ul {
         display: flex;
         flex-wrap: wrap;
